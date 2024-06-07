@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#post-link {
+    display: block;
+    width: calc(100% / 3);
+    height: 100px;
+}
+#post-link a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#post-link a:hover {
+    outline: 1px solid;
+    outline-offset: -1px;
+}
+#post-link a h2 {
+    text-transform: uppercase;
+}
+#post-link a #text-container {
+    padding: 5%;
+}

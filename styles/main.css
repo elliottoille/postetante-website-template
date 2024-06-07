@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "colors.css";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
+}
+:root {
+    color-scheme: dark light;
+    --nav-height: 120px;
+}
+body {
+    background: light-dark(var(--light-bg), var(--dark-bg));
+    color: light-dark(var(--light-color), var(--dark-color));
+}
+.content {
+    margin: 0 20% 0 20%;
+}
+.navigation {
+    height: var(--nav-height);
+    line-height: var(--nav-height);
+}
+.navigation h1 {
+    font-weight: 900;
+}
+.navigation #nav-bar-left {
+    float: left;
+}
+.navigation #nav-bar-right {
+    float: right;
+}
+.navigation #nav-bar-right ul {
+    list-style: none;
+}
+.navigation #nav-bar-right ul li {
+    width: auto;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+.navigation #nav-bar-right ul li a {
+    color: light-dark(var(--light-color), var(--dark-color));
+    text-decoration: none;
+    display: block;
+    padding: 0 calc(var(--nav-height) * 0.25);
+    font-size: 16pt;
+    text-transform: uppercase;
+    border-bottom: none;
+}
+.navigation #nav-bar-right ul li a:hover {
+    color: light-dark(var(--light-highlight), var(--dark-highlight));
+    text-decoration: underline;
+}
+.main-frame {
+    width: 100%;
+    height: calc(100vh - 2 * var(--nav-height));
+}
+.main-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.footer {
+    height: var(--nav-height);
+    line-height: var(--nav-height);
+    /*position: fixed;*/
+    bottom: 0;
+}
+.footer #footer-bar-left {
+    float: left;
+}
+.footer #footer-bar-left a {
+    color: light-dark(var(--light-color), var(--dark-color));
+}
+.footer #footer-bar-right {
+    float: right;
+}
+.footer #footer-bar-right ul {
+    list-style: none;
+}
+.footer #footer-bar-right ul li {
+    width: auto;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+.footer #footer-bar-right ul li a {
+    color: light-dark(var(--light-color), var(--dark-color));
+    text-decoration: none;
+    display: block;
+    padding: 0 calc(var(--nav-height) * 0.25);
+    border-bottom: none;
+}
+.footer #footer-bar-right ul li a:hover {
+    color: light-dark(var(--light-highlight), var(--dark-highlight));
+    text-decoration: underline;
+}

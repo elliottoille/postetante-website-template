@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'colors.css';
+:root {
+    color-schemes: dark light;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--dark-bg);
+        color: var(--dark-color);
+    }
+    a { color: var(--dark-color); }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background: var(--light-bg);
+        color: var(--light-color);
+    }
+    a { color: var(--light-color); }
+}
+* {
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+    font-size: 14pt;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    text-align: justify;
+}
